@@ -21,6 +21,8 @@
 		AEE6F0D817FCBC5F0087B05C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEE6F0BA17FCBC5F0087B05C /* UIKit.framework */; };
 		AEE6F0E017FCBC5F0087B05C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AEE6F0DE17FCBC5F0087B05C /* InfoPlist.strings */; };
 		AEE6F0E217FCBC5F0087B05C /* MatchismoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AEE6F0E117FCBC5F0087B05C /* MatchismoTests.m */; };
+		AEE6F0ED17FCBF130087B05C /* Deck.m in Sources */ = {isa = PBXBuildFile; fileRef = AEE6F0EC17FCBF130087B05C /* Deck.m */; };
+		AEE6F0F117FCC02B0087B05C /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = AEE6F0F017FCC02B0087B05C /* Card.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,10 @@
 		AEE6F0DD17FCBC5F0087B05C /* MatchismoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MatchismoTests-Info.plist"; sourceTree = "<group>"; };
 		AEE6F0DF17FCBC5F0087B05C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		AEE6F0E117FCBC5F0087B05C /* MatchismoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MatchismoTests.m; sourceTree = "<group>"; };
+		AEE6F0EB17FCBF130087B05C /* Deck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Deck.h; path = Models/Deck.h; sourceTree = "<group>"; };
+		AEE6F0EC17FCBF130087B05C /* Deck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Deck.m; path = Models/Deck.m; sourceTree = "<group>"; };
+		AEE6F0EF17FCC02B0087B05C /* Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Card.h; path = Models/Card.h; sourceTree = "<group>"; };
+		AEE6F0F017FCC02B0087B05C /* Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Card.m; path = Models/Card.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,8 +118,7 @@
 		AEE6F0BC17FCBC5F0087B05C /* Matchismo */ = {
 			isa = PBXGroup;
 			children = (
-				AEE6F0C517FCBC5F0087B05C /* AppDelegate.h */,
-				AEE6F0C617FCBC5F0087B05C /* AppDelegate.m */,
+				AEE6F0EE17FCBF1C0087B05C /* Models */,
 				AEE6F0C817FCBC5F0087B05C /* Main.storyboard */,
 				AEE6F0CB17FCBC5F0087B05C /* ViewController.h */,
 				AEE6F0CC17FCBC5F0087B05C /* ViewController.m */,
@@ -126,6 +131,8 @@
 		AEE6F0BD17FCBC5F0087B05C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				AEE6F0C517FCBC5F0087B05C /* AppDelegate.h */,
+				AEE6F0C617FCBC5F0087B05C /* AppDelegate.m */,
 				AEE6F0BE17FCBC5F0087B05C /* Matchismo-Info.plist */,
 				AEE6F0BF17FCBC5F0087B05C /* InfoPlist.strings */,
 				AEE6F0C217FCBC5F0087B05C /* main.m */,
@@ -150,6 +157,17 @@
 				AEE6F0DE17FCBC5F0087B05C /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AEE6F0EE17FCBF1C0087B05C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AEE6F0EB17FCBF130087B05C /* Deck.h */,
+				AEE6F0EC17FCBF130087B05C /* Deck.m */,
+				AEE6F0EF17FCC02B0087B05C /* Card.h */,
+				AEE6F0F017FCC02B0087B05C /* Card.m */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -249,6 +267,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AEE6F0F117FCC02B0087B05C /* Card.m in Sources */,
+				AEE6F0ED17FCBF130087B05C /* Deck.m in Sources */,
 				AEE6F0CD17FCBC5F0087B05C /* ViewController.m in Sources */,
 				AEE6F0C717FCBC5F0087B05C /* AppDelegate.m in Sources */,
 				AEE6F0C317FCBC5F0087B05C /* main.m in Sources */,
