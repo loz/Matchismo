@@ -257,7 +257,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="pGF-Rj-SiQ">
-                                <rect key="frame" x="205" y="441" width="73" height="30"/>
+                                <rect key="frame" x="125" y="441" width="73" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Deal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -266,24 +266,12 @@
                                     <action selector="dealAgain:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="jdy-yu-HEk"/>
                                 </connections>
                             </button>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="CMW-AT-KQ3">
-                                <rect key="frame" x="22" y="443" width="111" height="29"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <segments>
-                                    <segment title="2 Card"/>
-                                    <segment title="3 Card"/>
-                                </segments>
-                                <connections>
-                                    <action selector="switchGame:" destination="vXZ-lx-hvc" eventType="valueChanged" id="9jJ-fM-Da7"/>
-                                </connections>
-                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
                         <outlet property="flipResultLabel" destination="e4G-AZ-hc5" id="0ap-yF-Ei2"/>
                         <outlet property="flipsLabel" destination="15G-2Z-b3V" id="WdP-U1-Q52"/>
-                        <outlet property="gameMode" destination="CMW-AT-KQ3" id="D5L-bo-cT5"/>
                         <outlet property="scoreLabel" destination="kC8-Lj-WRP" id="l1w-oh-Ml6"/>
                         <outletCollection property="cardButtons" destination="cpv-XK-VgJ" id="Zne-4s-xti"/>
                         <outletCollection property="cardButtons" destination="fJK-6W-MpY" id="drk-uT-FaT"/>
