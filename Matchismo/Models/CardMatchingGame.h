@@ -14,6 +14,7 @@
              usingDeck:(Deck *)deck;
 -(void)flipCardAtIndex:(NSUInteger)index;
 -(Card *)cardAtIndex:(NSUInteger)index;
+@property (strong, nonatomic) NSMutableArray *cards;
 @property (nonatomic, readonly) int score;
 @property (nonatomic, readonly) NSString *resultMessage;
 @end

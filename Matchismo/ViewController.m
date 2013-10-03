@@ -10,6 +10,7 @@
 #import "Card.h"
 #import "PlayingCardDeck.h"
 #import "CardMatchingGame.h"
+#import "ThreeCardMatchingGame.h"
 
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *flipsLabel;
@@ -19,13 +20,23 @@
 @property (weak, nonatomic) IBOutlet UILabel *scoreLabel;
 @property (weak, nonatomic) IBOutlet UILabel *flipResultLabel;
 - (IBAction)dealAgain:(id)sender;
+@property (weak, nonatomic) IBOutlet UISegmentedControl *gameMode;
+- (IBAction)switchGame:(id)sender;
 @end
 
 @implementation ViewController
 
--(CardMatchingGame *)game {
+-(id)game {
     if(!_game) [self resetGame];
     return _game;
+}
+
+-(NSArray *)gameTypes {
+  return @[[CardMatchingGame class], [ThreeCardMatchingGame class]];
+}
+
+-(Class)gameType {
+  return [self.gameTypes objectAtIndex:[self.gameMode selectedSegmentIndex]];
 }
 
 -(void)setCardButtons:(NSArray *)cardButtons {
@@ -34,7 +45,9 @@
 }
 
 -(void) resetGame {
-    _game = [[CardMatchingGame alloc] initWithCardCount:self.cardButtons.count
+    Class game = [self gameType];
+    NSLog(@"Game Type %@ (%d)", game, [self.gameMode selectedSegmentIndex]);
+    _game = [[game alloc] initWithCardCount:self.cardButtons.count
                                               usingDeck:[[PlayingCardDeck alloc] init]];
 }
 
@@ -57,14 +70,20 @@
 }
 
 -(IBAction)dealAgain:(id)sender {
+    self.gameMode.enabled = YES;
     self.flipCount = 0;
     [self resetGame];
     [self updateUI];
 }
 
 - (IBAction)flipCard:(UIButton *)sender {
+    self.gameMode.enabled = NO;
     [self.game flipCardAtIndex:[self.cardButtons indexOfObject:sender]];
     self.flipCount++;
     [self updateUI];
+}
+
+- (IBAction)switchGame:(id)sender {
+    [self resetGame];
 }
 @end
