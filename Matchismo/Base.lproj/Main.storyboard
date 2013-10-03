@@ -187,11 +187,19 @@
                                     <action selector="flipCard:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="gzS-ww-Laq"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score: 0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="kC8-Lj-WRP">
+                                <rect key="frame" x="182" y="527" width="118" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
                         <outlet property="flipsLabel" destination="15G-2Z-b3V" id="WdP-U1-Q52"/>
+                        <outlet property="scoreLabel" destination="kC8-Lj-WRP" id="l1w-oh-Ml6"/>
                         <outletCollection property="cardButtons" destination="cpv-XK-VgJ" id="Zne-4s-xti"/>
                         <outletCollection property="cardButtons" destination="fJK-6W-MpY" id="drk-uT-FaT"/>
                         <outletCollection property="cardButtons" destination="VUW-hP-hLc" id="3vM-d7-Jvs"/>
