@@ -1,17 +1,17 @@
 //
-//  ViewController.m
+//  CardGameViewController.m
 //  Matchismo
 //
 //  Created by Jonathan Lozinski on 02/10/2013.
 //  Copyright (c) 2013 Jonathan Lozinski. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "CardGameViewController.h"
 #import "Card.h"
 #import "PlayingCardDeck.h"
 #import "CardMatchingGame.h"
 
-@interface ViewController ()
+@interface CardGameViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *flipsLabel;
 @property (nonatomic) int flipCount;
 @property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *cardButtons;
@@ -21,7 +21,7 @@
 - (IBAction)dealAgain:(id)sender;
 @end
 
-@implementation ViewController
+@implementation CardGameViewController
 
 -(id)game {
     if(!_game) [self resetGame];
