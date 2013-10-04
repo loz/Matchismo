@@ -13,7 +13,9 @@
 +(NSArray *)validShades;
 +(int)numSymbols;
 +(int)numCount;
-+(NSDictionary *)symbolStrings;
++(NSArray *)symbolStrings;
+
+-(NSString *)symbolString;
 
 @property (strong, nonatomic) NSString *colour;
 @property (nonatomic) int symbol;

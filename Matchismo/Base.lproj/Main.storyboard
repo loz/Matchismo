@@ -332,27 +332,28 @@
                                 </state>
                                 <connections>
                                     <action selector="dealAgain:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="GXH-ob-fab"/>
+                                    <action selector="dealAgain:" destination="juM-em-Qan" eventType="touchUpInside" id="xmF-PB-Hng"/>
                                 </connections>
                             </button>
                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" id="K3I-tN-nui">
                                 <rect key="frame" x="22" y="50" width="63" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="20"/>
                                 <size key="titleShadowOffset" width="2" height="2"/>
                                 <state key="normal" title="{}"/>
                                 <state key="selected">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="flipCard:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="jFd-4s-nGJ"/>
+                                    <action selector="flipCard:" destination="juM-em-Qan" eventType="touchUpInside" id="NIG-e0-4d1"/>
                                 </connections>
                             </button>
                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" id="IbB-LO-zKe">
                                 <rect key="frame" x="164" y="50" width="63" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="20"/>
                                 <size key="titleShadowOffset" width="2" height="2"/>
                                 <state key="normal" title="{}"/>
                                 <state key="selected">
@@ -360,13 +361,14 @@
                                 </state>
                                 <connections>
                                     <action selector="flipCard:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="4T4-Eq-UIn"/>
+                                    <action selector="flipCard:" destination="juM-em-Qan" eventType="touchUpInside" id="p9C-tJ-xbn"/>
                                 </connections>
                             </button>
                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" id="SPD-YP-NDl">
                                 <rect key="frame" x="93" y="50" width="63" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="20"/>
                                 <size key="titleShadowOffset" width="2" height="2"/>
                                 <state key="normal" title="{}"/>
                                 <state key="selected">
@@ -374,19 +376,21 @@
                                 </state>
                                 <connections>
                                     <action selector="flipCard:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="7Cu-mw-SaO"/>
+                                    <action selector="flipCard:" destination="juM-em-Qan" eventType="touchUpInside" id="s3f-Y2-znE"/>
                                 </connections>
                             </button>
                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" id="hSh-1K-TQ9">
                                 <rect key="frame" x="235" y="50" width="63" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="20"/>
                                 <size key="titleShadowOffset" width="2" height="2"/>
                                 <state key="normal" title="{}"/>
                                 <state key="selected">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
+                                    <action selector="flipCard:" destination="juM-em-Qan" eventType="touchUpInside" id="fe1-Ii-foT"/>
                                     <action selector="flipCard:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="oaE-xp-Icp"/>
                                 </connections>
                             </button>
@@ -394,13 +398,14 @@
                                 <rect key="frame" x="22" y="104" width="63" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="20"/>
                                 <size key="titleShadowOffset" width="2" height="2"/>
                                 <state key="normal" title="{}"/>
                                 <state key="selected">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
+                                    <action selector="flipCard:" destination="juM-em-Qan" eventType="touchUpInside" id="IVr-QC-iew"/>
                                     <action selector="flipCard:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="gVp-Uz-tpB"/>
                                 </connections>
                             </button>
@@ -408,7 +413,7 @@
                                 <rect key="frame" x="164" y="104" width="63" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="20"/>
                                 <size key="titleShadowOffset" width="2" height="2"/>
                                 <state key="normal" title="{}"/>
                                 <state key="selected">
@@ -416,13 +421,14 @@
                                 </state>
                                 <connections>
                                     <action selector="flipCard:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="R8w-tm-6Oh"/>
+                                    <action selector="flipCard:" destination="juM-em-Qan" eventType="touchUpInside" id="czv-qN-iMt"/>
                                 </connections>
                             </button>
                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" id="VmS-Uy-7eB">
                                 <rect key="frame" x="93" y="104" width="63" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="20"/>
                                 <size key="titleShadowOffset" width="2" height="2"/>
                                 <state key="normal" title="{}"/>
                                 <state key="selected">
@@ -430,27 +436,28 @@
                                 </state>
                                 <connections>
                                     <action selector="flipCard:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ZhF-lz-B4j"/>
+                                    <action selector="flipCard:" destination="juM-em-Qan" eventType="touchUpInside" id="yZh-qm-Hl6"/>
                                 </connections>
                             </button>
                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" id="zD0-VP-jVi">
                                 <rect key="frame" x="235" y="104" width="63" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="20"/>
                                 <size key="titleShadowOffset" width="2" height="2"/>
                                 <state key="normal" title="{}"/>
                                 <state key="selected">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="flipCard:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="MPW-U8-nWF"/>
+                                    <action selector="flipCard:" destination="juM-em-Qan" eventType="touchUpInside" id="PXO-0h-RJZ"/>
                                 </connections>
                             </button>
                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" id="aTj-jM-PHr">
                                 <rect key="frame" x="22" y="158" width="63" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="20"/>
                                 <size key="titleShadowOffset" width="2" height="2"/>
                                 <state key="normal" title="{}"/>
                                 <state key="selected">
@@ -458,13 +465,14 @@
                                 </state>
                                 <connections>
                                     <action selector="flipCard:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="mYL-N5-BT5"/>
+                                    <action selector="flipCard:" destination="juM-em-Qan" eventType="touchUpInside" id="xZg-iJ-NmG"/>
                                 </connections>
                             </button>
                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" id="A4U-8o-1Sj">
                                 <rect key="frame" x="164" y="158" width="63" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="20"/>
                                 <size key="titleShadowOffset" width="2" height="2"/>
                                 <state key="normal" title="{}"/>
                                 <state key="selected">
@@ -472,13 +480,14 @@
                                 </state>
                                 <connections>
                                     <action selector="flipCard:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Ld2-6n-EVo"/>
+                                    <action selector="flipCard:" destination="juM-em-Qan" eventType="touchUpInside" id="Qht-bF-c2M"/>
                                 </connections>
                             </button>
                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" id="qL3-Ss-Kaf">
                                 <rect key="frame" x="93" y="158" width="63" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="20"/>
                                 <size key="titleShadowOffset" width="2" height="2"/>
                                 <state key="normal" title="{}"/>
                                 <state key="selected">
@@ -486,13 +495,14 @@
                                 </state>
                                 <connections>
                                     <action selector="flipCard:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="0BX-Au-zyP"/>
+                                    <action selector="flipCard:" destination="juM-em-Qan" eventType="touchUpInside" id="hj5-bL-S1o"/>
                                 </connections>
                             </button>
                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" id="lbf-Cj-xeA">
                                 <rect key="frame" x="235" y="158" width="63" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="20"/>
                                 <size key="titleShadowOffset" width="2" height="2"/>
                                 <state key="normal" title="{}"/>
                                 <state key="selected">
@@ -500,19 +510,21 @@
                                 </state>
                                 <connections>
                                     <action selector="flipCard:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="66v-m5-iHq"/>
+                                    <action selector="flipCard:" destination="juM-em-Qan" eventType="touchUpInside" id="7rE-Zk-54z"/>
                                 </connections>
                             </button>
                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" id="Mpj-Q2-uL1">
                                 <rect key="frame" x="22" y="212" width="63" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="20"/>
                                 <size key="titleShadowOffset" width="2" height="2"/>
                                 <state key="normal" title="{}"/>
                                 <state key="selected">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
+                                    <action selector="flipCard:" destination="juM-em-Qan" eventType="touchUpInside" id="9Pa-Ut-PLI"/>
                                     <action selector="flipCard:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="VIf-xJ-tlH"/>
                                 </connections>
                             </button>
@@ -520,7 +532,7 @@
                                 <rect key="frame" x="164" y="212" width="63" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="20"/>
                                 <size key="titleShadowOffset" width="2" height="2"/>
                                 <state key="normal" title="{}"/>
                                 <state key="selected">
@@ -528,19 +540,21 @@
                                 </state>
                                 <connections>
                                     <action selector="flipCard:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="3Wv-kr-nPi"/>
+                                    <action selector="flipCard:" destination="juM-em-Qan" eventType="touchUpInside" id="AG5-2e-VBd"/>
                                 </connections>
                             </button>
                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" id="r0j-3k-eia">
                                 <rect key="frame" x="93" y="212" width="63" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="20"/>
                                 <size key="titleShadowOffset" width="2" height="2"/>
                                 <state key="normal" title="{}"/>
                                 <state key="selected">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
+                                    <action selector="flipCard:" destination="juM-em-Qan" eventType="touchUpInside" id="QVR-G0-QAK"/>
                                     <action selector="flipCard:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="YUN-iC-RQY"/>
                                 </connections>
                             </button>
@@ -548,27 +562,29 @@
                                 <rect key="frame" x="235" y="212" width="63" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="20"/>
                                 <size key="titleShadowOffset" width="2" height="2"/>
                                 <state key="normal" title="{}"/>
                                 <state key="selected">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
+                                    <action selector="flipCard:" destination="juM-em-Qan" eventType="touchUpInside" id="2aY-3w-qLd"/>
                                     <action selector="flipCard:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ZRe-d8-ejG"/>
                                 </connections>
                             </button>
                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" id="MgZ-u9-QID">
-                                <rect key="frame" x="24" y="266" width="63" height="46"/>
+                                <rect key="frame" x="22" y="266" width="63" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="20"/>
                                 <size key="titleShadowOffset" width="2" height="2"/>
                                 <state key="normal" title="{}"/>
                                 <state key="selected">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
+                                    <action selector="flipCard:" destination="juM-em-Qan" eventType="touchUpInside" id="VNy-Xl-WaC"/>
                                     <action selector="flipCard:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="k64-6L-RxH"/>
                                 </connections>
                             </button>
@@ -576,13 +592,14 @@
                                 <rect key="frame" x="166" y="266" width="63" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="20"/>
                                 <size key="titleShadowOffset" width="2" height="2"/>
                                 <state key="normal" title="{}"/>
                                 <state key="selected">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
+                                    <action selector="flipCard:" destination="juM-em-Qan" eventType="touchUpInside" id="bxs-ZX-W6A"/>
                                     <action selector="flipCard:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ejJ-XL-zlk"/>
                                 </connections>
                             </button>
@@ -590,13 +607,14 @@
                                 <rect key="frame" x="95" y="266" width="63" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="20"/>
                                 <size key="titleShadowOffset" width="2" height="2"/>
                                 <state key="normal" title="{}"/>
                                 <state key="selected">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
+                                    <action selector="flipCard:" destination="juM-em-Qan" eventType="touchUpInside" id="AKT-FP-8AX"/>
                                     <action selector="flipCard:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="xCc-CU-xff"/>
                                 </connections>
                             </button>
@@ -604,27 +622,29 @@
                                 <rect key="frame" x="237" y="266" width="63" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="20"/>
                                 <size key="titleShadowOffset" width="2" height="2"/>
                                 <state key="normal" title="{}"/>
                                 <state key="selected">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
+                                    <action selector="flipCard:" destination="juM-em-Qan" eventType="touchUpInside" id="IQk-lE-gUa"/>
                                     <action selector="flipCard:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="oYS-zp-c3b"/>
                                 </connections>
                             </button>
                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" id="wWc-Os-IhJ">
-                                <rect key="frame" x="24" y="320" width="63" height="46"/>
+                                <rect key="frame" x="22" y="320" width="63" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="20"/>
                                 <size key="titleShadowOffset" width="2" height="2"/>
                                 <state key="normal" title="{}"/>
                                 <state key="selected">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
+                                    <action selector="flipCard:" destination="juM-em-Qan" eventType="touchUpInside" id="JIG-Dh-PkG"/>
                                     <action selector="flipCard:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="j5s-D8-A5Z"/>
                                 </connections>
                             </button>
@@ -632,7 +652,7 @@
                                 <rect key="frame" x="166" y="320" width="63" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="20"/>
                                 <size key="titleShadowOffset" width="2" height="2"/>
                                 <state key="normal" title="{}"/>
                                 <state key="selected">
@@ -640,19 +660,21 @@
                                 </state>
                                 <connections>
                                     <action selector="flipCard:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="6jz-G6-9Dx"/>
+                                    <action selector="flipCard:" destination="juM-em-Qan" eventType="touchUpInside" id="tYZ-R2-7l5"/>
                                 </connections>
                             </button>
                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" id="W6o-Zs-XP0">
                                 <rect key="frame" x="95" y="320" width="63" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="20"/>
                                 <size key="titleShadowOffset" width="2" height="2"/>
                                 <state key="normal" title="{}"/>
                                 <state key="selected">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
+                                    <action selector="flipCard:" destination="juM-em-Qan" eventType="touchUpInside" id="0U6-oc-FLz"/>
                                     <action selector="flipCard:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="sIK-Ka-hrZ"/>
                                 </connections>
                             </button>
@@ -660,7 +682,7 @@
                                 <rect key="frame" x="237" y="320" width="63" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="20"/>
                                 <size key="titleShadowOffset" width="2" height="2"/>
                                 <state key="normal" title="{}"/>
                                 <state key="selected">
@@ -668,12 +690,42 @@
                                 </state>
                                 <connections>
                                     <action selector="flipCard:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="1x2-eG-RDM"/>
+                                    <action selector="flipCard:" destination="juM-em-Qan" eventType="touchUpInside" id="AGc-nz-17w"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Set Match" id="TPk-Dp-gSL"/>
+                    <connections>
+                        <outlet property="flipResultLabel" destination="MGX-tf-RW1" id="vc9-c5-Wfa"/>
+                        <outlet property="flipsLabel" destination="s8o-1k-HeK" id="wq4-RE-7z3"/>
+                        <outlet property="scoreLabel" destination="tMw-34-NpB" id="iBq-sL-DO7"/>
+                        <outletCollection property="cardButtons" destination="K3I-tN-nui" id="6oE-Uu-38c"/>
+                        <outletCollection property="cardButtons" destination="SPD-YP-NDl" id="ZfC-MR-qqM"/>
+                        <outletCollection property="cardButtons" destination="IbB-LO-zKe" id="T78-WD-LMs"/>
+                        <outletCollection property="cardButtons" destination="hSh-1K-TQ9" id="tXx-sj-GNu"/>
+                        <outletCollection property="cardButtons" destination="FRr-sB-mQl" id="gn1-6m-tfF"/>
+                        <outletCollection property="cardButtons" destination="VmS-Uy-7eB" id="lFc-e3-Xm6"/>
+                        <outletCollection property="cardButtons" destination="nDG-zt-kdm" id="Wok-rg-qqP"/>
+                        <outletCollection property="cardButtons" destination="zD0-VP-jVi" id="Mke-79-Lrq"/>
+                        <outletCollection property="cardButtons" destination="aTj-jM-PHr" id="j4I-JJ-Nqh"/>
+                        <outletCollection property="cardButtons" destination="qL3-Ss-Kaf" id="aYN-jB-nRy"/>
+                        <outletCollection property="cardButtons" destination="A4U-8o-1Sj" id="weT-jL-1Y9"/>
+                        <outletCollection property="cardButtons" destination="lbf-Cj-xeA" id="XbX-nJ-mXX"/>
+                        <outletCollection property="cardButtons" destination="Mpj-Q2-uL1" id="UVW-5Z-qvJ"/>
+                        <outletCollection property="cardButtons" destination="r0j-3k-eia" id="GmZ-nv-3tD"/>
+                        <outletCollection property="cardButtons" destination="hmH-Qf-ijN" id="rZB-1d-ErQ"/>
+                        <outletCollection property="cardButtons" destination="J08-eY-X3g" id="5Cu-nZ-Ef8"/>
+                        <outletCollection property="cardButtons" destination="MgZ-u9-QID" id="pIR-GX-mL9"/>
+                        <outletCollection property="cardButtons" destination="56c-kl-ygo" id="ic3-U1-mv1"/>
+                        <outletCollection property="cardButtons" destination="dCk-6R-vr0" id="5TY-Bd-sJG"/>
+                        <outletCollection property="cardButtons" destination="epG-9I-IZj" id="vYL-ex-z9v"/>
+                        <outletCollection property="cardButtons" destination="wWc-Os-IhJ" id="d7m-qC-pnv"/>
+                        <outletCollection property="cardButtons" destination="W6o-Zs-XP0" id="oUH-RB-qUr"/>
+                        <outletCollection property="cardButtons" destination="92U-i0-5bg" id="bXU-es-cGW"/>
+                        <outletCollection property="cardButtons" destination="Z7c-Yj-knr" id="Dvq-nN-qC9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DjC-ri-KoW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -683,7 +735,7 @@
         <scene sceneID="X2g-TI-OsT">
             <objects>
                 <tabBarController definesPresentationContext="YES" id="5WO-JH-dNX" sceneMemberID="viewController">
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="PWS-dK-Dt4">
                         <rect key="frame" x="129" y="330" width="163" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>

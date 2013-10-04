@@ -32,12 +32,12 @@
     return 3;
 }
 
-+(NSDictionary *)symbolStrings {
-    return @{
-             @"solid":@[@"▲", @"●", @"■"],
-             @"striped":@[@"△", @"○", @"□"],
-             @"outline":@[@"△", @"○", @"□"]
-             };
++(NSArray *)symbolStrings {
+    return @[@"▲", @"●", @"■"];
+}
+
+-(NSString *)symbolString {
+    return [[[self class] symbolStrings] objectAtIndex:(NSUInteger)self.symbol];
 }
 
 -(void)setColour:(NSString *)colour {
