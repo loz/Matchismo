@@ -8,8 +8,16 @@
 
 #import "SetCardMatchingGame.h"
 
+@interface SetCardMatchingGame()
+@property (nonatomic, readwrite) int score;
+@property (nonatomic, readwrite) NSString *resultMessage;
+@end
+
 @implementation SetCardMatchingGame
 
+#define POINTS_FOR_SET 10
+#define PENALTY 3
+#define FLIP_COST 1
 
 -(void)flipCardAtIndex:(NSUInteger)index {
     Card *card = [self cardAtIndex:index];
@@ -22,19 +30,26 @@
                     [faceUpCards addObject:otherCard];
                 }
             }
-            
             if (faceUpCards.count == 2) {
                 //Three Cards for a Set
-                
-            } else if (faceUpCards.count > 2){
-                //Too Many, so no match
-                [faceUpCards makeObjectsPerformSelector:@selector(flipDown)];
+                if ([card match:faceUpCards]) {
+                    [faceUpCards makeObjectsPerformSelector:@selector(makeUnplayable)];
+                    card.unplayable = YES;
+                    card.faceUp = YES;
+                    self.score += POINTS_FOR_SET;
+                } else {
+                    [faceUpCards makeObjectsPerformSelector:@selector(flipDown)];
+                    self.score -= PENALTY;
+                }
             } else {
                 //Still Choosing
-                
+                card.faceUp = YES;
+                self.score -= FLIP_COST;
             }
+        } else {
+            card.faceUp = NO;
         }
-        card.faceUp = !card.isFaceUp;
+
     }
 }
 

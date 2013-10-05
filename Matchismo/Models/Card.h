@@ -15,4 +15,5 @@
 
 -(int)match:(NSArray *)otherCards;
 -(void)flipDown;
+-(void)makeUnplayable;
 @end

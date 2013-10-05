@@ -8,8 +8,16 @@
 
 #import "Card.h"
 
+#define RED 1
+#define GREEN 2
+#define PURPLE 3
+
+#define SOLID 1
+#define OUTLINE 2
+#define SHADED 3
+
 @interface SetCard : Card
-+(NSArray *)validColors;
++(NSArray *)validColours;
 +(NSArray *)validShades;
 +(int)numSymbols;
 +(int)numCount;
@@ -17,8 +25,8 @@
 
 -(NSString *)symbolString;
 
-@property (strong, nonatomic) NSString *colour;
+@property (nonatomic) int colour;
 @property (nonatomic) int symbol;
-@property (strong, nonatomic) NSString *shading;
+@property (nonatomic) int shading;
 @property (nonatomic) int number;
 @end

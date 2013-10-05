@@ -23,6 +23,11 @@
 }
 
 -(void)flipDown {
-    self.faceUp = FALSE;
+    self.faceUp = NO;
+}
+
+
+-(void)makeUnplayable {
+    self.unplayable = YES;
 }
 @end

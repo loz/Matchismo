@@ -22,6 +22,10 @@
 
 @implementation SetGameViewController
 
+-(void)viewWillAppear:(BOOL)animated {
+    [self dealAgain:self];
+}
+
 -(id)game {
     if(!_game) [self resetGame];
     return _game;
@@ -66,15 +70,15 @@
 }
 
 -(UIColor *)colorForCard:(SetCard *)card {
-    if([card.shading isEqualToString:@"solid"]) {
-        if([card.colour isEqualToString:@"red"]) {
+    if(card.shading == SOLID) {
+        if(card.colour == RED) {
             return [UIColor redColor];
-        } else if ([card.colour isEqualToString:@"green"]) {
+        } else if (card.colour == GREEN) {
             return [UIColor colorWithRed:0.0 green:0.6 blue:0.0 alpha:1.0];
         } else { //purple
             return [UIColor purpleColor];
         }
-    } else if ([card.shading isEqualToString:@"striped"]) {
+    } else if (card.shading == SHADED) {
         return [UIColor grayColor];
     } else {
         return [UIColor clearColor];
@@ -82,10 +86,10 @@
 }
 
 -(UIColor *)strokeColorForCard:(SetCard *)card {
-    if(![card.shading isEqualToString:@"solid"]) {
-        if([card.colour isEqualToString:@"red"]) {
+    if(card.shading != SOLID) {
+        if(card.colour == RED) {
             return [UIColor redColor];
-        } else if ([card.colour isEqualToString:@"green"]) {
+        } else if (card.colour == GREEN) {
             return [UIColor colorWithRed:0.0 green:0.6 blue:0.0 alpha:1.0];
         } else { //purple
             return [UIColor purpleColor];
@@ -96,7 +100,7 @@
 }
 
 -(NSInteger)strikeForCard:(SetCard *)card {
-    if([card.shading isEqualToString:@"striped"]) {
+    if(card.shading == SHADED) {
         return NSUnderlinePatternSolid;
     } else {
         return NSUnderlineStyleNone;

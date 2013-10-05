@@ -13,14 +13,14 @@
 -(id)init {
     self = [super init];
     if (self) {
-        for(NSString *colour in [SetCard validColors]) {
+        for(NSNumber *colour in [SetCard validColours]) {
             for(int symbol = 0; symbol < [SetCard numSymbols]; symbol++) {
-                for (NSString *shade in [SetCard validShades]) {
+                for (NSNumber *shade in [SetCard validShades]) {
                     for(int number=1; number <= [SetCard numCount]; number++) {
                         SetCard *card = [[SetCard alloc] init];
-                        card.colour = colour;
+                        card.colour = [colour intValue];
                         card.symbol = symbol;
-                        card.shading = shade;
+                        card.shading = [shade intValue];
                         card.number = number;
                         [self addCard:card atTop:YES];
                     }

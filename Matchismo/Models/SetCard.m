@@ -16,12 +16,12 @@
  NUMBER:  ONE/TWO/THREE SYMBOLS
 */
 
-+(NSArray *)validColors {
-    return @[@"red", @"green", @"purple"];
++(NSArray *)validColours {
+    return @[@RED, @GREEN, @PURPLE];
 }
 
 +(NSArray *)validShades {
-    return @[@"solid", @"striped", @"outline"];
+    return @[@SOLID, @OUTLINE, @SHADED];
 }
 
 +(int)numSymbols {
@@ -40,8 +40,8 @@
     return [[[self class] symbolStrings] objectAtIndex:(NSUInteger)self.symbol];
 }
 
--(void)setColour:(NSString *)colour {
-    if([[SetCard validColors] containsObject:colour]) {
+-(void)setColour:(int)colour {
+    if([[SetCard validColours] containsObject:[NSNumber numberWithInt:colour]]) {
         _colour = colour;
     }
 }
@@ -52,8 +52,8 @@
     }
 }
 
--(void)setShading:(NSString *)shading {
-    if([[SetCard validShades] containsObject:shading]) {
+-(void)setShading:(int)shading {
+    if([[SetCard validShades] containsObject:[NSNumber numberWithInt:shading]]) {
         _shading = shading;
     }
 }
@@ -62,6 +62,65 @@
     if(number >=1 && number <= [SetCard numCount]) {
         _number = number;
     }
+}
+
+-(int)match:(NSArray *)otherCards {
+    int score = 0;
+    if (otherCards.count == 2) {
+        SetCard *second = [otherCards objectAtIndex:0];
+        SetCard *third  = [otherCards objectAtIndex:1];
+        if ([self matchesSymbolWithSecond:second andThird:third] &&
+            [self matchesNumberWithSecond:second andThird:third] &&
+            [self matchesColourWithSecond:second andThird:third] &&
+            [self matchesShadingWithSecond:second andThird:third]) {
+            score = 1;
+        }
+    }
+    return score;
+}
+
+-(BOOL)matchesSymbolWithSecond:(SetCard *)second andThird:(SetCard *)third {
+    return (
+            self.symbol == second.symbol &&
+            self.symbol == third.symbol
+        ) || (
+            self.symbol != second.symbol &&
+            self.symbol != third.symbol &&
+            second.symbol != third.symbol
+        );
+}
+
+-(BOOL)matchesNumberWithSecond:(SetCard *)second andThird:(SetCard *)third {
+    return (
+            self.number == second.number &&
+            self.number == third.number
+            ) || (
+                  self.number != second.number &&
+                  self.number != third.number &&
+                  second.number != third.number
+                  );
+}
+
+-(BOOL)matchesColourWithSecond:(SetCard *)second andThird:(SetCard *)third {
+    return (
+            self.colour == second.colour &&
+            self.colour == third.colour
+            ) || (
+                  self.colour != second.colour &&
+                  self.colour != third.colour &&
+                  second.colour != third.colour
+                  );
+}
+
+-(BOOL)matchesShadingWithSecond:(SetCard *)second andThird:(SetCard *)third {
+    return (
+            self.shading == second.shading &&
+            self.shading == third.shading
+            ) || (
+                  self.shading != second.shading &&
+                  self.shading != third.shading &&
+                  second.shading != third.shading
+                  );
 }
 
 @end
