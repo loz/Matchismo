@@ -21,4 +21,8 @@
     
     return score;
 }
+
+-(void)flipDown {
+    self.faceUp = FALSE;
+}
 @end

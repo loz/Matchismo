@@ -14,4 +14,5 @@
 @property (nonatomic,getter = isUnplayable) BOOL unplayable;
 
 -(int)match:(NSArray *)otherCards;
+-(void)flipDown;
 @end

@@ -42,10 +42,16 @@
     for(UIButton *cardButton in self.cardButtons) {
         Card *card = [self.game cardAtIndex:[self.cardButtons indexOfObject:cardButton]];
         [cardButton setAttributedTitle:[self contentForCard:card] forState:UIControlStateSelected];
-        [cardButton setTitle:card.contents forState:UIControlStateSelected|UIControlStateDisabled];
+        [cardButton setAttributedTitle:[self contentForCard:card] forState:UIControlStateSelected|UIControlStateDisabled];
+        [cardButton setAttributedTitle:[self contentForRearCard:card] forState:UIControlStateNormal];
         cardButton.selected = card.isFaceUp;
         cardButton.enabled = !card.isUnplayable;
         cardButton.alpha = card.isUnplayable ? 0.3 : 1.0;
+        if (card.isFaceUp) {
+            cardButton.backgroundColor = [UIColor whiteColor];
+        } else {
+            cardButton.backgroundColor = [UIColor lightGrayColor];
+        }
     }
     self.scoreLabel.text = [NSString stringWithFormat:@"Score: %d", self.game.score];
     self.flipResultLabel.text = self.game.resultMessage;
@@ -53,6 +59,10 @@
 
 -(NSAttributedString *)contentForCard:(Card *)card {
     return [[NSAttributedString alloc] initWithString:card.contents];
+}
+
+-(NSAttributedString *)contentForRearCard:(Card *)card {
+    return [[NSAttributedString alloc] initWithString:@""];
 }
 
 - (void)setFlipCount:(int)flipCount {

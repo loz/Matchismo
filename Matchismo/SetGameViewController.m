@@ -7,14 +7,14 @@
 //
 
 #import "SetGameViewController.h"
-#import "CardMatchingGame.h"
+#import "SetCardMatchingGame.h"
 #import "SetCardDeck.h"
 #import "SetCard.h"
 
 @interface SetGameViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *flipsLabel;
 @property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *cardButtons;
-@property (strong, nonatomic) CardMatchingGame *game;
+@property (strong, nonatomic) SetCardMatchingGame *game;
 @property (weak, nonatomic) IBOutlet UILabel *scoreLabel;
 @property (weak, nonatomic) IBOutlet UILabel *flipResultLabel;
 - (IBAction)flipCard:(id)sender;
@@ -28,7 +28,7 @@
 }
 
 -(void) resetGame {
-    _game = [[CardMatchingGame alloc] initWithCardCount:self.cardButtons.count
+    _game = [[SetCardMatchingGame alloc] initWithCardCount:self.cardButtons.count
                                               usingDeck:[[SetCardDeck alloc] init]];
 }
 
@@ -61,6 +61,10 @@
     return [content copy];
 }
 
+-(NSAttributedString *)contentForRearCard:(Card *)card {
+    return [self contentForCard:card];
+}
+
 -(UIColor *)colorForCard:(SetCard *)card {
     if([card.shading isEqualToString:@"solid"]) {
         if([card.colour isEqualToString:@"red"]) {
@@ -71,7 +75,7 @@
             return [UIColor purpleColor];
         }
     } else if ([card.shading isEqualToString:@"striped"]) {
-        return [UIColor lightGrayColor];
+        return [UIColor grayColor];
     } else {
         return [UIColor clearColor];
     }
