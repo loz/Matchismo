@@ -12,37 +12,9 @@
 #import "SetCard.h"
 
 @interface SetGameViewController ()
-@property (weak, nonatomic) IBOutlet UILabel *flipsLabel;
-@property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *cardButtons;
-@property (strong, nonatomic) SetCardMatchingGame *game;
-@property (weak, nonatomic) IBOutlet UILabel *scoreLabel;
-@property (weak, nonatomic) IBOutlet UILabel *flipResultLabel;
-- (IBAction)flipCard:(id)sender;
 @end
 
 @implementation SetGameViewController
-
--(void)viewWillAppear:(BOOL)animated {
-    [self dealAgain:self];
-}
-
--(id)game {
-    if(!_game) [self resetGame];
-    return _game;
-}
-
--(void) resetGame {
-    _game = [[SetCardMatchingGame alloc] initWithCardCount:self.cardButtons.count
-                                              usingDeck:[[SetCardDeck alloc] init]];
-}
-
--(IBAction)dealAgain:(id)sender {
-    [super dealAgain:sender];
-}
-
-- (IBAction)flipCard:(UIButton *)sender {
-    [super flipCard:sender];
-}
 
 -(NSAttributedString *)contentForCard:(Card *)card {
     SetCard *setCard = (SetCard *)card;

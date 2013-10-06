@@ -2,11 +2,12 @@
 //  CardMatchingGame.h
 //  Matchismo
 //
-//  Created by Jonathan Lozinski on 03/10/2013.
+//  Created by Jonathan Lozinski on 06/10/2013.
 //  Copyright (c) 2013 Jonathan Lozinski. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
+#import "Card.h"
 #import "Deck.h"
 
 @interface CardMatchingGame : NSObject
@@ -16,5 +17,5 @@
 -(Card *)cardAtIndex:(NSUInteger)index;
 @property (strong, nonatomic) NSMutableArray *cards;
 @property (nonatomic, readonly) int score;
-@property (nonatomic, readonly) NSString *resultMessage;
+@property (strong, nonatomic) NSString *resultMessage;
 @end

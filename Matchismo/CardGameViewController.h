@@ -7,8 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Deck.h"
 
 @interface CardGameViewController : UIViewController
-- (IBAction)flipCard:(id)sender;
-- (IBAction)dealAgain:(id)sender;
+-(Class)gameType;
+-(Deck *)createDeck; //abstract
+-(void)updateCell:(UICollectionViewCell *)cell UsingCard:(Card *)card; //abstract
+@property (nonatomic) NSUInteger startingCardCount; //abstract
 @end

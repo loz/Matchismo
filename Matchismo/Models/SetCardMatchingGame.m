@@ -7,10 +7,10 @@
 //
 
 #import "SetCardMatchingGame.h"
+#import "card.h"
 
 @interface SetCardMatchingGame()
 @property (nonatomic, readwrite) int score;
-@property (nonatomic, readwrite) NSString *resultMessage;
 @end
 
 @implementation SetCardMatchingGame
