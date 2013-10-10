@@ -18,4 +18,5 @@
 @property (strong, nonatomic) NSMutableArray *cards;
 @property (nonatomic, readonly) int score;
 @property (strong, nonatomic) NSString *resultMessage;
+-(void)dealMoreCards;
 @end

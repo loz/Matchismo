@@ -11,6 +11,7 @@
 
 @interface CardMatchingGame()
 @property (nonatomic, readwrite) int score;
+@property (strong, nonatomic) Deck* deck;
 @end
 
 @implementation CardMatchingGame
@@ -22,6 +23,7 @@
 
 -(id)initWithCardCount:(NSUInteger)cardCount usingDeck:(Deck *)deck {
     self = [super init];
+    self.deck = deck;
     if(self) {
         for(int i =0; i <= cardCount; i++) {
             Card *card = [deck drawRandomCard];
@@ -41,6 +43,13 @@
 
 -(void)flipCardAtIndex:(NSUInteger)index {
     //abstract
+}
+
+-(void)dealMoreCards {
+    for(int i=0; i<3; i++) {
+        Card *card = [self.deck drawRandomCard];
+        [self.cards addObject:card];
+    }
 }
 
 
