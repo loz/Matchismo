@@ -171,6 +171,7 @@
                                 </cells>
                                 <connections>
                                     <outlet property="dataSource" destination="juM-em-Qan" id="4tJ-CJ-AVx"/>
+                                    <outletCollection property="gestureRecognizers" destination="y4K-kp-A01" appends="YES" id="1Sw-sh-8z0"/>
                                 </connections>
                             </collectionView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7sx-5h-R0q">
@@ -186,6 +187,7 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <gestureRecognizers/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Set Match" id="TPk-Dp-gSL"/>
                     <connections>
@@ -194,6 +196,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DjC-ri-KoW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="y4K-kp-A01">
+                    <connections>
+                        <action selector="flipCard:" destination="juM-em-Qan" id="ek6-Md-iac"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="691" y="715"/>
         </scene>

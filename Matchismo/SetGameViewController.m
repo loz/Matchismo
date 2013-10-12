@@ -48,7 +48,6 @@
 - (IBAction)dealMoreCards:(id)sender {
     SetCardMatchingGame *setGame = (SetCardMatchingGame *)self.game;
     NSArray *newCards = [setGame dealMoreCards];
-    NSLog(@"New Card Indexes: %@", newCards);
     [self.setCardCollectionView insertItemsAtIndexPaths:newCards];
     [self updateUI];
 }

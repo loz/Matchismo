@@ -46,7 +46,6 @@
 }
 
 -(NSArray *)dealMoreCards {
-    NSLog(@"Drawing More Cards From Deck: %@", self.deck);
     NSMutableArray *newCards = [[NSMutableArray alloc] init];
     for(int i=0; i<3; i++) {
         Card *card = [self.deck drawRandomCard];
@@ -55,7 +54,6 @@
                                                     inSection:0];
         [newCards addObject:cardPath];
     }
-    NSLog(@"newCards: %@", newCards);
     return [newCards copy];
 }
 

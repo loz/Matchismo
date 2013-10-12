@@ -24,7 +24,11 @@
     UIBezierPath *roundedRect = [UIBezierPath bezierPathWithRoundedRect:self.bounds
                                                            cornerRadius:CARD_RADIUS];
     [roundedRect addClip];
-    [[UIColor whiteColor] setFill];
+    if(self.faceUp) {
+        [[UIColor colorWithRed:0.9 green:0.9 blue:1.0 alpha:1.0] setFill];
+    } else {
+        [[UIColor whiteColor] setFill];
+    }
     UIRectFill(self.bounds);
     [[UIColor blackColor] setStroke];
     [roundedRect stroke];
