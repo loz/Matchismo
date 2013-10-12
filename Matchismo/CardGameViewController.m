@@ -43,7 +43,8 @@
 -(void) resetGame {
     _game = [[[self gameType] alloc] initWithCardCount:self.startingCardCount
                                               usingDeck:[self createDeck]];
-    }
+    [self.cardCollectionView reloadData];
+}
 
 -(Deck *)createDeck {
     return nil; //abstract
