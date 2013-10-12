@@ -25,7 +25,7 @@
     self = [super init];
     self.deck = deck;
     if(self) {
-        for(int i =0; i <= cardCount; i++) {
+        for(int i =0; i < cardCount; i++) {
             Card *card = [deck drawRandomCard];
             if(card) {
                 self.cards[i] = card;
@@ -45,11 +45,18 @@
     //abstract
 }
 
--(void)dealMoreCards {
+-(NSArray *)dealMoreCards {
+    NSLog(@"Drawing More Cards From Deck: %@", self.deck);
+    NSMutableArray *newCards = [[NSMutableArray alloc] init];
     for(int i=0; i<3; i++) {
         Card *card = [self.deck drawRandomCard];
         [self.cards addObject:card];
+        NSIndexPath *cardPath = [NSIndexPath indexPathForItem:([self.cards count] - 1)
+                                                    inSection:0];
+        [newCards addObject:cardPath];
     }
+    NSLog(@"newCards: %@", newCards);
+    return [newCards copy];
 }
 
 

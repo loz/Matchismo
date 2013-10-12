@@ -190,6 +190,7 @@
                     <tabBarItem key="tabBarItem" title="Set Match" id="TPk-Dp-gSL"/>
                     <connections>
                         <outlet property="cardCollectionView" destination="XhM-eQ-uP8" id="Bnz-1J-MSl"/>
+                        <outlet property="setCardCollectionView" destination="XhM-eQ-uP8" id="4Ca-d1-C9l"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DjC-ri-KoW" userLabel="First Responder" sceneMemberID="firstResponder"/>

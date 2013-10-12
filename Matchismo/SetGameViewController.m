@@ -14,6 +14,7 @@
 #import "SetCard.h"
 
 @interface SetGameViewController ()
+@property (weak, nonatomic) IBOutlet UICollectionView *setCardCollectionView;
 @end
 
 @implementation SetGameViewController
@@ -28,7 +29,6 @@
 -(NSUInteger)startingCardCount {
     return 12;
 }
-
 
 -(void)updateCell:(UICollectionViewCell *)cell UsingCard:(Card *)card {
     if ([cell isKindOfClass:[SetCardCollectionViewCell class]]) {
@@ -47,7 +47,9 @@
 
 - (IBAction)dealMoreCards:(id)sender {
     SetCardMatchingGame *setGame = (SetCardMatchingGame *)self.game;
-    [setGame dealMoreCards];
+    NSArray *newCards = [setGame dealMoreCards];
+    NSLog(@"New Card Indexes: %@", newCards);
+    [self.setCardCollectionView insertItemsAtIndexPaths:newCards];
     [self updateUI];
 }
 
